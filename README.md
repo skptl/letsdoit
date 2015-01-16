@@ -1,4 +1,4 @@
 # letsdoit
 No need to describe.
 
-Check the site : http://git-scm.com/doc
+Check the site : http://git-scm.com/doc & http://git-scm.com/downloads
