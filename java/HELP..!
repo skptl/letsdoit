@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int min(int a,int b,int f[1000])
+    {
+  int d;
+    int m;
+    for(d=a;d<b;d++)
+{ if(f[d]<=f[d+1])
+    {
+    m=f[d];
+    f[d]=f[d+1];
+    f[d+1]=m;
+}
+}
+    return(b);
+}
+
+int main() {
+    int n,t,r,g,h;
+    int i[1000],j[1000],l[1000];
+    scanf("%d %d",&n,&t);
+    for(r=0;r<n;r++)
+        {
+        scanf("%d",&l[r]);
+    }
+    
+    for(r=0;r<t;r++)
+        {
+        scanf("%d %d",&i[r],&j[r]);
+        
+        
+    }
+        
+    for(r=0;r<t;r++)
+        {
+        g=i[r];
+        h=j[r];
+       printf("%d\n",min(l[g],l[h],l));
+    }
+    
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
